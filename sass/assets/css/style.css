@@ -1,0 +1,62 @@
+.btn {
+  width: 200px;
+  padding: 10px 0;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  margin: 10px;
+}
+.btn.btn-laranja {
+  background: orange;
+  color: #fff;
+}
+.btn.btn-laranja:hover {
+  background: #e69500;
+}
+.btn.btn-verde {
+  background: green;
+  color: #fff;
+}
+.btn.btn-verde:hover {
+  background: #006700;
+}
+.btn.btn-azul {
+  background: blue;
+  color: #fff;
+}
+.btn.btn-azul:hover {
+  background: #0000e6;
+}
+.btn.btn-roxo {
+  background: purple;
+  color: #fff;
+}
+.btn.btn-roxo:hover {
+  background: #670067;
+}
+
+/* 
+.btn-laranja{
+    @include btn;
+    @include button-style($color-orange, #fff)
+}
+
+.btn-roxo{
+    @include btn;
+    @include button-style($color-purple, #fff)
+
+}
+.btn-verde{
+    @include btn;
+    @include button-style($color-green, #fff)
+
+}
+.btn-azul{
+    @include btn;
+    @include button-style($color-blue, #fff)
+}
+
+*/
+
+/*# sourceMappingURL=style.css.map */

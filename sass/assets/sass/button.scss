@@ -1,0 +1,59 @@
+@import "./variaveis.scss";
+
+@mixin button-style($background, $color){
+    background: $background;
+    color: $color;
+    &:hover{
+        background:darken($background, 5%)
+    }
+}
+
+ .btn{
+    width: 200px;
+    padding: 10px 0;
+    background: none;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    margin: 10px;
+
+    &.btn-laranja{
+        @include button-style($color-orange, #fff)
+    }
+    &.btn-verde{
+        @include button-style($color-green, #fff)
+    }
+    &.btn-azul{
+        @include button-style($color-blue, #fff)
+    }
+    &.btn-roxo{
+        @include button-style($color-purple, #fff)
+    }
+}
+
+//O & deve ser colocado na frente pois ele esta dentro da class.
+
+//Include deve ser colocado quando esta fora da class
+
+/* 
+.btn-laranja{
+    @include btn;
+    @include button-style($color-orange, #fff)
+}
+
+.btn-roxo{
+    @include btn;
+    @include button-style($color-purple, #fff)
+    
+}
+.btn-verde{
+    @include btn;
+    @include button-style($color-green, #fff)
+    
+}
+.btn-azul{
+    @include btn;
+    @include button-style($color-blue, #fff)
+}
+
+*/
